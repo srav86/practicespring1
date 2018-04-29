@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+
+
+	<bean id="circle" class="com.pract.practicespringvideo1.xml.Circle"></bean>
+	<bean id="triangle" class="com.pract.practicespringvideo1.xml.Triangle"></bean>
+	<bean id="main" class="com.pract.practicespringvideo1.xml.Main">
+		<property name="shape1" ref="circle"></property>
+		<property name="shape2" ref="triangle"></property>
+
+
+	</bean>
+
+
+<!-- <bean id="Main" class="com.pract.practicespringvideo1.xml.Main">
+<constructor-arg name="shape1" ref="Circle"/>   
+<constructor-arg name="shape2" ref="Triangle"/> 
+</bean>-->
+</beans>
